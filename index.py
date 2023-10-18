@@ -5,10 +5,15 @@ line = ["*"]
 
 print ()
 
-if number in range(3,27):
+def criarArvore(number):
+    # criarEstrela(number)
+    criarFolha(number)
+    # criarTronco(number)
+
+def criarFolha(number):
     count = number * 2 - 1
     for x in range(0,number):
-        
+
         # mostra os espaços antes da linha
         print(int(count/2) * " ", end="")
 
@@ -30,6 +35,9 @@ if number in range(3,27):
         count -= 2
 
         print()
+
+if number in range(3,27):
+    criarArvore(number)
 else:
     print("numero invalido")
 
