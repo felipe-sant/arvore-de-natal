@@ -5,6 +5,8 @@ line = ["*"]
 
 print ()
 
+# Testando
+
 if number in range(3,27):
     count = number * 2 - 1
     for x in range(0,number):
